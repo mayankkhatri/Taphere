@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mayank Khatri - Founder of Tap-Here Links</title>
+    <!--? Styles  -->
+    <link rel="stylesheet" href="profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <!--? Site Icon  -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://i.postimg.cc/kXLtDLwj/tapherelogo.png"
+    />
+  </head>
+  <body>
+    <!--! Pay-Popups   -->
+    <div class="vc-book" id="vc-book-card">
+      <div class="card-head">
+        <a class="close-arrow"
+          ><ion-icon name="chevron-down-outline"></ion-icon>
+        </a>
+        <h3>Talk to me on a video call</h3>
+      </div>
+      <div class="creator-img" style="margin-top: 1rem">
+        <img src="https://i.postimg.cc/8k0C0ST8/founder2.jpg" />
+      </div>
+      <h3 style="margin-top: 1rem">
+        Video Call with <span>Mayank Khatri</span>
+      </h3>
+      <div id="wrapvc">
+        <p style="font-size: 0.75rem">
+          Talk to <span>Mayank</span> about whatever you want as much as you
+          want
+        </p>
+        <h3 class="vc-price pricevc">₹499</h3>
+        <form action="" class="form-box-vc">
+          <input
+            type="text"
+            name="clientname"
+            placeholder="Your Name"
+            class="form-text"
+          />
+          <input
+            type="number"
+            name="phonenumber"
+            placeholder="Phone Number"
+            class="form-text"
+            required
+          />
+          <input
+            type="submit"
+            class="submit-btn"
+            value="Get a Video Call"
+            required
+          />
+          <!--? Cache   -->
+          <input
+            type="text"
+            name="creatorname"
+            id="creatornamevc"
+            style="display: none"
+          />
+          <input
+            type="text"
+            name="ordername"
+            id="ordernamevc"
+            style="display: none"
+          />
+          <input type="text" name="price" id="pricevc" style="display: none" />
+        </form>
+      </div>
+    </div>
+    <div class="coffee-book" id="coffee-book-card">
+      <div class="card-head">
+        <a class="close-arrow close-arrow-coffee"
+          ><ion-icon name="chevron-down-outline"></ion-icon>
+        </a>
+        <h3>Go on a Coffee Date with Me</h3>
+      </div>
+      <div class="creator-img" style="margin-top: 1rem">
+        <img src="https://i.postimg.cc/8k0C0ST8/founder2.jpg" />
+      </div>
+      <h3 style="margin-top: 1rem">
+        Coffee Date with <span>Mayank Khatri</span>
+      </h3>
+      <div id="wrapcf">
+        <p style="font-size: 0.75rem">
+          Go on a coffee date with <span>Mayank</span> & make long term
+          connections over a coffee date
+        </p>
+        <h3 class="vc-price pricecf">₹4,999</h3>
+        <form class="form-box-coffee">
+          <input
+            type="text"
+            name="clientname"
+            placeholder="Your Name"
+            class="form-text"
+          />
+          <input
+            type="number"
+            name="phonenumber"
+            placeholder="Phone Number"
+            class="form-text"
+            required
+          />
+          <input
+            type="submit"
+            class="submit-btn"
+            value="Get a Video Call"
+            required
+          />
+          <!--? Cache   -->
+          <input
+            type="text"
+            name="creatorname"
+            id="creatornamecf"
+            style="display: none"
+          />
+          <input
+            type="text"
+            name="ordername"
+            id="ordernamecf"
+            style="display: none"
+          />
+          <input type="text" name="price" id="pricecf" style="display: none" />
+        </form>
+      </div>
+    </div>
+    <div class="exclusive-book" id="exclusive-book-card">
+      <div class="card-head">
+        <a class="close-arrow close-arrow-exclusive"
+          ><ion-icon name="chevron-down-outline"></ion-icon>
+        </a>
+        <h3>Subscribe to my exclusive content</h3>
+      </div>
+      <div class="creator-img" style="margin-top: 1rem">
+        <img src="https://i.postimg.cc/8k0C0ST8/founder2.jpg" />
+      </div>
+      <h3 style="margin-top: 1rem">
+        Montly Subscription of my exclusive Content
+      </h3>
+      <div id="wrapex">
+        <p style="font-size: 0.75rem">
+          Get exclusive photos & Video from <span>Mayank</span> daily from his
+          personal WhatsApp Number
+        </p>
+        <h3 class="vc-price priceexc">₹999</h3>
+        <form class="form-box-exclusive">
+          <input
+            type="text"
+            name="clientname"
+            placeholder="Your Name"
+            class="form-text"
+          />
+          <input
+            type="number"
+            name="phonenumber"
+            placeholder="Phone Number"
+            class="form-text"
+            required
+          />
+          <input
+            type="submit"
+            class="submit-btn"
+            value="Get a Video Call"
+            required
+          />
+          <!--? Cache   -->
+          <input
+            type="text"
+            name="creatorname"
+            id="creatornameex"
+            style="display: none"
+          />
+          <input
+            type="text"
+            name="ordername"
+            id="ordernameex"
+            style="display: none"
+          />
+          <input type="text" name="price" id="priceex" style="display: none" />
+        </form>
+      </div>
+    </div>
+
+    <!--! Action-Pop-Up's  -->
+    <!--? Video Call with Me  -->
+
+    <div class="video-call">
+      <a class="vc-up">
+        <ion-icon name="chevron-up-outline" class="arrow-up bounce"></ion-icon>
+      </a>
+      <a>
+        <img
+          src="https://i.postimg.cc/90L99h03/image.png"
+          class="vc-icon wave"
+        />
+        <a class="vc-link"
+          ><h3 class="color-change">Talk to Me on a Personal Video Call</h3></a
+        >
+      </a>
+    </div>
+    <!--? Coffee Date with Me  -->
+    <div class="coffee">
+      <a class="message-bubble">
+        Coffee Date With Me <span class="dark">?</span>
+      </a>
+      <div class="coffee-date shake">
+        <a>
+          <img
+            class="coffee-img"
+            src="https://i.postimg.cc/DycQDTLJ/image.png"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!--! Header with Creator Name -->
+    <div class="header">
+      <h3>
+        <a href="index.html" class="blue-tap">Tap-Here</a> X
+        <span class="creator-name">Mayank Khatri</span>
+      </h3>
+    </div>
+    <!--! Section With CreatorName CreatorCity CreatorEmail CreatorDP -->
+    <section class="creator-info">
+      <div class="dp">
+        <img src="https://i.ibb.co/k0gBhYk/founder1.jpg" />
+      </div>
+      <div class="info">
+        <h1 class="info-name">Mayank Khatri</h1>
+        <p class="info-city" style="font-weight: 700">
+          <ion-icon
+            class="info-icons"
+            style="color: red"
+            name="location-sharp"
+          ></ion-icon
+          >Delhi 🇮🇳
+        </p>
+        <p class="info-username">
+          <ion-icon
+            class="info-icons"
+            style="transform: translateY(0.3rem); color: #e95950"
+            name="logo-instagram"
+          ></ion-icon
+          >@geniusly.mayank
+        </p>
+        <p class="info-email">
+          <ion-icon
+            class="info-icons"
+            style="color: dodgerblue"
+            name="mail"
+          ></ion-icon
+          >mayank@tap-here.in
+        </p>
+        <a class="info-link" href="#about-me">About Me</a>
+      </div>
+    </section>
+    <!--! My Links Section  -->
+    <section class="mylinks">
+      <h3 class="head">My Links</h3>
+      <!--? Social Icons  -->
+      <div class="social">
+        <div class="social-icon tilt">
+          <!--*LinkedIn  -->
+          <a href="#">
+            <img
+              src="https://pbs.twimg.com/profile_images/1508518003184349187/1KQYoqPY_400x400.png"
+              alt=""
+          /></a>
+        </div>
+        <div class="social-icon tilt">
+          <!-- * Twitter -->
+          <a href="https://openinapp.co/ond16">
+            <img
+              src="https://play-lh.googleusercontent.com/wIf3HtczQDjHzHuu7vezhqNs0zXAG85F7VmP7nhsTxO3OHegrVXlqIh_DWBYi86FTIGk"
+              alt=""
+          /></a>
+        </div>
+        <div class="social-icon tilt">
+          <!--* Snapchat  -->
+          <a href="https://www.snapchat.com/add/geniusly.mayank">
+            <img
+              src="https://play-lh.googleusercontent.com/KxeSAjPTKliCErbivNiXrd6cTwfbqUJcbSRPe_IBVK_YmwckfMRS1VIHz-5cgT09yMo"
+              alt=""
+          /></a>
+        </div>
+        <div class="social-icon tilt">
+          <!--* Youtube  -->
+          <a href="https://linktw.in/suPt9U">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/YouTube_social_red_square_%282017%29.svg/2048px-YouTube_social_red_square_%282017%29.svg.png"
+              alt=""
+          /></a>
+        </div>
+      </div>
+      <!--? Personal Link  -->
+      <div class="personal-link">
+        <a href="https://xtasy.in">
+          <img
+            class="personal-link-image"
+            src="https://s.tmimgcdn.com/scr/1200x750/233500/luxury-letter-m-logo-design-template_233501-original.png"
+            alt=""
+          />
+          <a class="personal-href" href="https://xtasy.in"
+            >Link to My Personal Blog</a
+          >
+        </a>
+      </div>
+    </section>
+    <!--! Latest Stuff Section  -->
+    <section class="latest">
+      <h3 class="head">My Latest Stuff</h3>
+      <div class="embeds">
+        <div class="yt-latest">
+          <iframe
+            class="frame"
+            src="https://www.youtube.com/embed/zT938rMemC0"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!--! Mythings Section  -->
+    <section class="mythings">
+      <h3 class="head">Things I Use</h3>
+      <div class="main-carousel product-container">
+        <div class="carousel-cell mything">
+          <a href="https://amzn.to/436JSl7"
+            ><img
+              class="product-image"
+              src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61lWP45wbzL._UL1500_.jpg"
+            />
+            <p>My Glasses</p></a
+          >
+        </div>
+        <div class="carousel-cell mything">
+          <a href="https://amzn.to/3Gkolf7"
+            ><img
+              class="product-image"
+              src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71MmQ1fepIL._SL1500_.jpg"
+            />
+            <p>Mic</p></a
+          >
+        </div>
+        <div class="carousel-cell mything">
+          <a href="https://amzn.to/3MjbDkf"
+            ><img
+              class="product-image"
+              src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/41wOapoSP9L._SL1280_.jpg"
+            />
+            <p>Ring Lights</p></a
+          >
+        </div>
+        <div class="carousel-cell mything">
+          <a href="https://amzn.to/3zFD3cx"
+            ><img
+              class="product-image"
+              src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/91l228Vg49L._SX679_.jpg"
+            />
+            <p>Hair Wax</p></a
+          >
+        </div>
+        <div class="carousel-cell mything">
+          <a href="https://amzn.to/3ZDARx3">
+            <img
+              class="product-image"
+              src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71Ce91FfDYL._SY879_.jpg"
+            />
+            <p>Cleanser</p></a
+          >
+        </div>
+        <div class="carousel-cell mything">
+          <a href="https://amzn.to/40KkcJx"
+            ><img
+              class="product-image"
+              src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61jYaY2ek4L._SL1500_.jpg"
+            />
+            <p>Moisturizer</p></a
+          >
+        </div>
+        <div class="carousel-cell mything">
+          <a href="https://amzn.to/3ZMPyxR"></a
+          ><img
+            class="product-image"
+            src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81aIdGHGiiL._SL1081_.jpg"
+          />
+          <p>My Posters</p>
+        </div>
+        <!-- * <div class="carousel-cell mything"><a href=""></a></div>  -->
+      </div>
+    </section>
+    <!--! Exclusive Conetent  -->
+    <section class="exclusive-content">
+      <h3 class="head">Exclusive Content</h3>
+      <div class="exclusive-wrap">
+        <div class="exclusive-image">
+          <a>
+            <img
+              src="https://i.postimg.cc/m28QdLz9/exclusive-content-thumb.png"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--! About Me  -->₈
+    <section id="about-me">
+      <h3 class="head">About Me</h3>
+      <div class="creator-img">
+        <img src="https://i.postimg.cc/8k0C0ST8/founder2.jpg" />
+      </div>
+      <div class="me-text">
+        <p>
+          Hi, I'm Mayank from Delhi, I started my instagram account a year ago
+          because a bitch was flaunting her 500 likes on an instagram post,
+          tryna annoy me by telling me I just had 50 on mine.
+        </p>
+        <div class="hire">
+          <a class="hire-link" href="#">Hire me for a project</a>
+          <div class="social">
+            <div class="social-icon-hire">
+              <!--*LinkedIn  -->
+              <a href="#">
+                <img
+                  src="https://pbs.twimg.com/profile_images/1508518003184349187/1KQYoqPY_400x400.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="social-icon-hire">
+              <!-- * Twitter -->
+              <a href="https://openinapp.co/ond16">
+                <img
+                  src="https://play-lh.googleusercontent.com/wIf3HtczQDjHzHuu7vezhqNs0zXAG85F7VmP7nhsTxO3OHegrVXlqIh_DWBYi86FTIGk"
+                  alt=""
+              /></a>
+            </div>
+            <div class="social-icon-hire">
+              <!--* Snapchat  -->
+              <a href="https://www.snapchat.com/add/geniusly.mayank">
+                <img
+                  src="https://play-lh.googleusercontent.com/KxeSAjPTKliCErbivNiXrd6cTwfbqUJcbSRPe_IBVK_YmwckfMRS1VIHz-5cgT09yMo"
+                  alt=""
+              /></a>
+            </div>
+            <div class="social-icon-hire">
+              <!--* Youtube  -->
+              <a href="https://linktw.in/suPt9U">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/YouTube_social_red_square_%282017%29.svg/2048px-YouTube_social_red_square_%282017%29.svg.png"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--! Footer  -->
+    <footer>
+      <h3 style="text-align: center">
+        Get Your <a href="index.html" class="blue-tap">Tap-Here</a> Link Now
+      </h3>
+    </footer>
+    <!--? Ion Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!--? Flickity -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!--! Custom Scripts -->
+    <script src="logic.js"></script>
+  </body>
+</html>
