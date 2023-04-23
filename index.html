@@ -102,7 +102,16 @@
       <h4 class="price">₹299<span style="font-size: 1.2rem">/Year</span></h4>
       <div id="link">
         <a class="create" href="#">Create Your Tap-Here Link Now</a>
+        <p class="dm" style="margin-top: 1rem"></p>
       </div>
     </section>
+    <script>
+      var buyButton = document.querySelector("#link");
+      var dmMsg = document.querySelector(".dm");
+      buyButton.addEventListener("click", dmUs);
+      function dmUs() {
+        dmMsg.innerHTML = `Dm us on instagram <a href="https://www.instagram.com/tap_here.in/">@tap_here.in</a>`;
+      }
+    </script>
   </body>
 </html>
