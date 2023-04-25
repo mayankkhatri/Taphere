@@ -336,7 +336,8 @@ footer {
 /*! Pay-Cards  */
 .vc-book,
 .coffee-book,
-.exclusive-book {
+.exclusive-book,
+.dm-book{
   max-height: 100vh;
   width: 100%;
   display: block;
@@ -352,7 +353,8 @@ footer {
 }
 .vc-book,
 .coffee-book,
-.exclusive-book {
+.exclusive-book, 
+.dm-book{
   position: fixed;
   bottom: -100%;
   transition: bottom 0.7s ease-out;
