@@ -445,9 +445,9 @@ footer {
   animation: darker 2s 1000 ease-in;
 }
 
-.tilt {
+/*.tilt {
   animation: tilt 8s 1000;
-}
+}*/
 
 @keyframes tilt {
   0% {
