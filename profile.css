@@ -462,6 +462,16 @@ footer {
   animation: tilt 8s 1000;
 }*/
 
+.fast-shake {
+  animation: fshake 2.5s 1000 ease-in-out;
+}
+
+@keyframes fshake {
+  50% {
+    scale: 108%;
+  }
+}
+
 @keyframes tilt {
   0% {
     transform: rotate(0deg);
