@@ -230,6 +230,17 @@ a {
 }
 
 /*! Popups */
+.dm {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 10%;
+  left: 0.5rem;
+  z-index: 7;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 20px 0px;
+}
+
 .video-call {
   display: flex;
   align-items: center;
