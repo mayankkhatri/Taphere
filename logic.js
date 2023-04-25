@@ -42,6 +42,20 @@ function bottomsUpExclusive() {
   document.getElementById("creatornamevc").value = creatorName;
 }
 
+// DM BOOK DRAWER
+var dmBookCard = document.getElementById("dm-book-card");
+var dmUp = document.querySelector(".dm-image");
+dmUp.addEventListener("click", bottomsUpDm);
+function bottomsUpDm() {
+  dmBookCard.style.bottom = "0";
+  ordername = "Chat";
+  document.getElementById("ordernamedm").value = ordername;
+  pricecost = document.querySelector(".pricedm").innerHTML;
+  document.getElementById("pricedm").value = pricecost;
+  let creatorName = document.querySelector(".creator-name").innerHTML;
+  document.getElementById("creatornamevc").value = creatorName;
+}
+
 // Close Popup
 document.querySelector(".close-arrow").addEventListener("click", bottomsDown);
 document
@@ -50,10 +64,14 @@ document
 document
   .querySelector(".close-arrow-coffee")
   .addEventListener("click", bottomsDown);
+document
+  .querySelector(".close-arrow-dm")
+  .addEventListener("click", bottomsDown);
 function bottomsDown() {
   vcBookCard.style.bottom = "-100%";
   coffeeBookCard.style.bottom = "-100%";
   exclusiveBookCard.style.bottom = "-100%";
+  dmBookCard.style.bottom = "-100%";
 }
 
 // Form date submit
@@ -140,6 +158,40 @@ formEx.addEventListener("submit", (e) => {
     .then((data) => {
       document.getElementById(
         "wrapex"
+      ).innerHTML = `<div class="completed" style="text-align: center">
+      <div class="submit-image">
+        <img src="https://i.postimg.cc/NMFt2820/image.png" />
+      </div>
+      <h3 style="font-size: 1.6rem">Please Be Patient</h3>
+      <h5 style="margin: 0.8rem 0; font-size: 1.1rem; color: #4d4d4f;">
+        <span>${creatorName}</span>'s Manager will reach out to you on <span style="color:#25D366;">WhatsApp</span> as soon
+        as ${firstName} can get in touch with you
+      </h5>
+      <h5 style="margin: 0.8rem 0; font-size: 1.01rem; color: #4d4d4f;">Payments will be collected there</h5>
+      <h6 style="color: #4d4d4f;">Thanks for showing your interest</h6>
+      <img
+        src="https://i.postimg.cc/fWq0gZc3/image.png"
+        style="width: 50px; margin-top: 0.3rem"
+      />
+    </div>`;
+    });
+});
+
+let formDm = document.querySelector(".form-box-dm");
+formDm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let data = new FormData(formDm);
+  fetch(
+    "https://script.google.com/macros/s/AKfycbwrtzrbtnSjOoYvfoAttCuyUvUY8diLEhINWoH1zzgmchyxRffge7T4tvfEZ18703ED/exec",
+    {
+      method: "POST",
+      body: data,
+    }
+  )
+    .then((res) => res.text())
+    .then((data) => {
+      document.getElementById(
+        "wrapdm"
       ).innerHTML = `<div class="completed" style="text-align: center">
       <div class="submit-image">
         <img src="https://i.postimg.cc/NMFt2820/image.png" />
