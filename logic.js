@@ -6,6 +6,8 @@ let firstName = creatorName.substring(0, creatorName.indexOf(" "));
 var vcBookCard = document.getElementById("vc-book-card");
 var vcUp = document.querySelector(".video-call");
 vcUp.addEventListener("click", bottomsUpVc);
+var tmvcUp = document.querySelector(".video-talk-icon");
+tmvcUp.addEventListener("click", bottomsUpVc);
 function bottomsUpVc() {
   vcBookCard.style.bottom = "0";
   ordername = "videocall";
@@ -19,6 +21,8 @@ function bottomsUpVc() {
 var coffeeBookCard = document.getElementById("coffee-book-card");
 var coffeeUp = document.querySelector(".coffee");
 coffeeUp.addEventListener("click", bottomsUpCoffee);
+var tmcoffeeUp = document.querySelector(".meet-talk-icon");
+tmcoffeeUp.addEventListener("click", bottomsUpCoffee);
 function bottomsUpCoffee() {
   coffeeBookCard.style.bottom = "0";
   ordername = "Coffee";
@@ -44,8 +48,10 @@ function bottomsUpExclusive() {
 
 // DM BOOK DRAWER
 var dmBookCard = document.getElementById("dm-book-card");
-var dmUp = document.querySelector(".dm-image");
-dmUp.addEventListener("click", bottomsUpDm);
+// var dmUp = document.querySelector(".dm-image");
+// dmUp.addEventListener("click", bottomsUpDm);
+var tmdmUp = document.querySelector(".chat-talk-icon");
+tmdmUp.addEventListener("click", bottomsUpDm);
 function bottomsUpDm() {
   dmBookCard.style.bottom = "0";
   ordername = "Chat";
