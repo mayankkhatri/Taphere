@@ -160,6 +160,10 @@ a {
   white-space: nowrap;
 }
 
+.video-talk-icon p {
+  margin-left: -5px;
+}
+
 /*! My Latest Stuff  */
 
 .embeds {
