@@ -157,6 +157,7 @@ a {
 }
 .talk-icon p {
   text-align: center;
+  white-space: nowrap;
 }
 
 /*! My Latest Stuff  */
