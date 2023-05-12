@@ -667,4 +667,8 @@ footer {
     bottom: 4rem;
     font-size: 2rem;
   }
+  .talk-icon {
+    width: 80px;
+    height: 80px;
+  }
 }
