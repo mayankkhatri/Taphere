@@ -98,12 +98,13 @@ function bottomsDown() {
 }
 
 // Form date submit
+// Form date submit
 let formVc = document.querySelector(".form-box-vc");
 formVc.addEventListener("submit", (e) => {
   e.preventDefault();
   let data = new FormData(formVc);
   fetch(
-    "https://script.google.com/macros/s/AKfycbwrtzrbtnSjOoYvfoAttCuyUvUY8diLEhINWoH1zzgmchyxRffge7T4tvfEZ18703ED/exec",
+    "https://script.google.com/macros/s/AKfycbwUiVDScCEvwMzOea1l89-qZ5L1WAlryvFGiaymV95njRLo-kN_zP8ihr1opIFSuEgLMQ/exec",
     {
       method: "POST",
       body: data,
@@ -137,7 +138,7 @@ formCf.addEventListener("submit", (e) => {
   e.preventDefault();
   let data = new FormData(formCf);
   fetch(
-    "https://script.google.com/macros/s/AKfycbwrtzrbtnSjOoYvfoAttCuyUvUY8diLEhINWoH1zzgmchyxRffge7T4tvfEZ18703ED/exec",
+    "https://script.google.com/macros/s/AKfycbwUiVDScCEvwMzOea1l89-qZ5L1WAlryvFGiaymV95njRLo-kN_zP8ihr1opIFSuEgLMQ/exec",
     {
       method: "POST",
       body: data,
@@ -171,7 +172,7 @@ formEx.addEventListener("submit", (e) => {
   e.preventDefault();
   let data = new FormData(formEx);
   fetch(
-    "https://script.google.com/macros/s/AKfycbwrtzrbtnSjOoYvfoAttCuyUvUY8diLEhINWoH1zzgmchyxRffge7T4tvfEZ18703ED/exec",
+    "https://script.google.com/macros/s/AKfycbwUiVDScCEvwMzOea1l89-qZ5L1WAlryvFGiaymV95njRLo-kN_zP8ihr1opIFSuEgLMQ/exec",
     {
       method: "POST",
       body: data,
@@ -205,7 +206,7 @@ formDm.addEventListener("submit", (e) => {
   e.preventDefault();
   let data = new FormData(formDm);
   fetch(
-    "https://script.google.com/macros/s/AKfycbwrtzrbtnSjOoYvfoAttCuyUvUY8diLEhINWoH1zzgmchyxRffge7T4tvfEZ18703ED/exec",
+    "https://script.google.com/macros/s/AKfycbwUiVDScCEvwMzOea1l89-qZ5L1WAlryvFGiaymV95njRLo-kN_zP8ihr1opIFSuEgLMQ/exec",
     {
       method: "POST",
       body: data,
@@ -239,7 +240,7 @@ formPh.addEventListener("submit", (e) => {
   e.preventDefault();
   let data = new FormData(formPh);
   fetch(
-    "https://script.google.com/macros/s/AKfycbwrtzrbtnSjOoYvfoAttCuyUvUY8diLEhINWoH1zzgmchyxRffge7T4tvfEZ18703ED/exec",
+    "https://script.google.com/macros/s/AKfycbwUiVDScCEvwMzOea1l89-qZ5L1WAlryvFGiaymV95njRLo-kN_zP8ihr1opIFSuEgLMQ/exec",
     {
       method: "POST",
       body: data,
