@@ -370,7 +370,8 @@ footer {
 .vc-book,
 .coffee-book,
 .exclusive-book,
-.dm-book{
+.dm-book,
+.phone-book{
   max-height: 100vh;
   width: 100%;
   display: block;
@@ -387,7 +388,8 @@ footer {
 .vc-book,
 .coffee-book,
 .exclusive-book, 
-.dm-book{
+.dm-book,
+.phone-book{
   position: fixed;
   bottom: -100%;
   transition: bottom 0.7s ease-out;
