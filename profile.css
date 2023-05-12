@@ -143,6 +143,7 @@ a {
 }
 
 /*! Talk to me icons */
+
 .talk-to-me {
   margin-bottom: 3rem;
 }
@@ -152,16 +153,14 @@ a {
   justify-content: space-around;
 }
 .talk-icon {
-  width: 70px;
-  height: 70px;
+  width: 18vw;
+  height: 18vw;
 }
 .talk-icon p {
   text-align: center;
-  white-space: nowrap;
-}
-
-.video-talk-icon p {
-  margin-left: -5px;
+  /* white-space: nowrap; */
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 
 /*! My Latest Stuff  */
