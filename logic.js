@@ -248,7 +248,7 @@ formPh.addEventListener("submit", (e) => {
     .then((res) => res.text())
     .then((data) => {
       document.getElementById(
-        "wrapex"
+        "wrapph"
       ).innerHTML = `<div class="completed" style="text-align: center">
       <div class="submit-image">
         <img src="https://i.postimg.cc/NMFt2820/image.png" />
