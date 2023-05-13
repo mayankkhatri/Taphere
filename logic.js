@@ -30,7 +30,7 @@ function bottomsUpCoffee() {
   pricecost = document.querySelector(".pricecf").innerHTML;
   document.getElementById("pricecf").value = pricecost;
   let creatorName = document.querySelector(".creator-name").innerHTML;
-  document.getElementById("creatornamevc").value = creatorName;
+  document.getElementById("creatornamecf").value = creatorName;
 }
 // Exclusive Content Drawer
 // var exclusiveBookCard = document.getElementById("exclusive-book-card");
@@ -59,7 +59,7 @@ function bottomsUpDm() {
   pricecost = document.querySelector(".pricedm").innerHTML;
   document.getElementById("pricedm").value = pricecost;
   let creatorName = document.querySelector(".creator-name").innerHTML;
-  document.getElementById("creatornamevc").value = creatorName;
+  document.getElementById("creatornamedm").value = creatorName;
 }
 //! Phone Call Drawer
 var phoneBookCard = document.getElementById("phone-book-card");
