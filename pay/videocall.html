@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-4SNN9YKKL7"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-4SNN9YKKL7");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Call with Shambhavi</title>
+    <!--? Styles  -->
+    <link rel="stylesheet" href="/pay/paystyle.css" />
+    <!--? Site Icon  -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://i.postimg.cc/kXLtDLwj/tapherelogo.png"
+    />
+  </head>
+  <body>
+    <!--! Header  -->
+    <div class="header">
+      <h3>Call with Shambhavi</h3>
+    </div>
+    <!--! Upi button link  -->
+    <div class="upi-btn">
+      <h3>Pay via UPI</h3>
+      <div class="pay-btn">
+        <a id="pay" href="#" class="link-btn"> Click Here to Pay ₹499 </a>
+      </div>
+    </div>
+    <div class="below">
+      <p>If above link doesn't work</p>
+      <a href="https://paytm.me/9rqy-ef" class="choose"
+        >Pay ₹<span class="total-money-t">499</span> with UPI</a
+      >
+    </div>
+    <div class="scan" style="margin-bottom: 5rem">
+      <h4 style="margin-top: 0rem" class="middle-head">Screenshot | Scan QR</h4>
+      <div id="qr"></div>
+    </div>
+    <footer>
+      <div class="upi-logos">
+        <div class="upi-logo">
+          <img src="https://i.postimg.cc/9ff5Hy4S/Untitled-design-6.png" />
+        </div>
+        <div class="upi-logo">
+          <img
+            src="https://i.pinimg.com/originals/f6/60/a6/f660a637c5ea8ef2b00218bac3479c82.png"
+          />
+        </div>
+        <div class="upi-logo">
+          <img src="https://i.postimg.cc/SsD7cpTJ/image.png" />
+        </div>
+        <div class="upi-logo">
+          <img src="https://i.postimg.cc/xdcqCVr0/Untitled-design-5.png" />
+        </div>
+      </div>
+    </footer>
+    <div class="share-btn">
+      <a id="pay" href="#" class="link-btn"> Share Link</a>
+    </div>
+    <!--! Scripts  -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+      payLink = `upi://pay?pa=paytmqr2810050501011ukp597vo5du@paytm&tn=Call%20With%20Shambhavi&pn=Mayank&cu=INR&am=499`;
+
+      document.getElementById("pay").href = payLink;
+      // Generating QR COde
+      var qrcode = new QRCode("qr", payLink);
+      // Above Link Doesn't work
+      var blow = document.querySelector(".below");
+      var above = document.querySelector("#pay");
+      above.addEventListener("click", () => {
+        setTimeout(() => {
+          blow.style.display = "block";
+        }, 5000);
+      });
+    </script>
+  </body>
+</html>
