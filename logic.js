@@ -6,52 +6,28 @@ let firstName = creatorName.substring(0, creatorName.indexOf(" "));
 var vcBookCard = document.getElementById("vc-book-card");
 var vcUp = document.querySelector(".video-call");
 vcUp.addEventListener("click", bottomsUpVc);
+// !here
 var tmvcUp = document.querySelector(".video-talk-icon");
 tmvcUp.addEventListener("click", bottomsUpVc);
+//! pop icon
+var coffeeUp = document.querySelector(".coffee");
+coffeeUp.addEventListener("click", bottomsUpPhone);
 function bottomsUpVc() {
   vcBookCard.style.bottom = "0";
-  ordername = "videocall";
+  ordername = "video call";
   document.getElementById("ordernamevc").value = ordername;
   pricecost = document.querySelector(".pricevc").innerHTML;
   document.getElementById("pricevc").value = pricecost;
   let creatorName = document.querySelector(".creator-name").innerHTML;
   document.getElementById("creatornamevc").value = creatorName;
 }
-// Coffe Book Drawer
-var coffeeBookCard = document.getElementById("coffee-book-card");
-var coffeeUp = document.querySelector(".coffee");
-coffeeUp.addEventListener("click", bottomsUpCoffee);
-var tmcoffeeUp = document.querySelector(".meet-talk-icon");
-tmcoffeeUp.addEventListener("click", bottomsUpCoffee);
-function bottomsUpCoffee() {
-  coffeeBookCard.style.bottom = "0";
-  ordername = "Coffee";
-  document.getElementById("ordernamecf").value = ordername;
-  pricecost = document.querySelector(".pricecf").innerHTML;
-  document.getElementById("pricecf").value = pricecost;
-  let creatorName = document.querySelector(".creator-name").innerHTML;
-  document.getElementById("creatornamecf").value = creatorName;
-}
-// Exclusive Content Drawer
-// var exclusiveBookCard = document.getElementById("exclusive-book-card");
-// var exclusiveUp = document.querySelector(".exclusive-image");
-// exclusiveUp.addEventListener("click", bottomsUpExclusive);
-// function bottomsUpExclusive() {
-//   exclusiveBookCard.style.bottom = "0";
-//   ordername = "Exclusive";
-//   document.getElementById("ordernameex").value = ordername;
-//   pricecost = document.querySelector(".priceexc").innerHTML;
-//   document.getElementById("priceex").value = pricecost;
-//   let creatorName = document.querySelector(".creator-name").innerHTML;
-//   document.getElementById("creatornamevc").value = creatorName;
-// }
 
 // DM BOOK DRAWER
 var dmBookCard = document.getElementById("dm-book-card");
-// var dmUp = document.querySelector(".dm-image");
-// dmUp.addEventListener("click", bottomsUpDm);
+// !here
 var tmdmUp = document.querySelector(".chat-talk-icon");
 tmdmUp.addEventListener("click", bottomsUpDm);
+// !here
 function bottomsUpDm() {
   dmBookCard.style.bottom = "0";
   ordername = "Chat";
@@ -61,10 +37,12 @@ function bottomsUpDm() {
   let creatorName = document.querySelector(".creator-name").innerHTML;
   document.getElementById("creatornamedm").value = creatorName;
 }
+
 //! Phone Call Drawer
 var phoneBookCard = document.getElementById("phone-book-card");
 var phoneUp = document.querySelector(".phone-talk-icon");
 phoneUp.addEventListener("click", bottomsUpPhone);
+
 function bottomsUpPhone() {
   phoneBookCard.style.bottom = "0";
   ordername = "Voice Call";
@@ -77,27 +55,49 @@ function bottomsUpPhone() {
 
 // Close Popup
 document.querySelector(".close-arrow").addEventListener("click", bottomsDown);
-// document
-//   .querySelector(".close-arrow-exclusive")
-//   .addEventListener("click", bottomsDown);
-document
-  .querySelector(".close-arrow-coffee")
-  .addEventListener("click", bottomsDown);
+
 document
   .querySelector(".close-arrow-dm")
   .addEventListener("click", bottomsDown);
 document
   .querySelector(".close-arrow-phone")
   .addEventListener("click", bottomsDown);
+
 function bottomsDown() {
   vcBookCard.style.bottom = "-100%";
-  coffeeBookCard.style.bottom = "-100%";
-//   exclusiveBookCard.style.bottom = "-100%";
   dmBookCard.style.bottom = "-100%";
   phoneBookCard.style.bottom = "-100%";
 }
+//! If above link don't work
+var dm_price = document.querySelector(".dm-money").innerHTML;
+var voc_price = document.querySelector(".voc-money").innerHTML;
+var vc_price = document.querySelector(".vc-money").innerHTML;
 
-// Form date submit
+// Above Link Doesn't work
+var blow = document.querySelector(".below-vc");
+var above = document.querySelector("#pay-vc");
+above.addEventListener("click", () => {
+  setTimeout(() => {
+    blow.style.display = "block";
+  }, 5000);
+});
+
+var blowdm = document.querySelector(".below-dm");
+var abovedm = document.querySelector("#pay-dm");
+abovedm.addEventListener("click", () => {
+  setTimeout(() => {
+    blowdm.style.display = "block";
+  }, 5000);
+});
+
+var blowph = document.querySelector(".below-voc");
+var aboveph = document.querySelector("#pay-voc");
+aboveph.addEventListener("click", () => {
+  setTimeout(() => {
+    blowph.style.display = "block";
+  }, 5000);
+});
+
 // Form date submit
 let formVc = document.querySelector(".form-box-vc");
 formVc.addEventListener("submit", (e) => {
@@ -112,94 +112,26 @@ formVc.addEventListener("submit", (e) => {
   )
     .then((res) => res.text())
     .then((data) => {
-      document.getElementById(
-        "wrapvc"
-      ).innerHTML = `<div class="completed" style="text-align: center">
-      <div class="submit-image">
-        <img src="https://i.postimg.cc/NMFt2820/image.png" />
-      </div>
-      <h3 style="font-size: 1.6rem">Please Be Patient</h3>
-      <h5 style="margin: 0.8rem 0; font-size: 1.1rem; color: #4d4d4f;">
-        <span>${creatorName}</span>'s Manager will reach out to you on <span style="color:#25D366;">WhatsApp</span> as soon
-        as ${firstName} can get in touch with you
-      </h5>
-      <h5 style="margin: 0.8rem 0; font-size: 1.01rem; color: #4d4d4f;">Payments will be collected there</h5>
-      <h6 style="color: #4d4d4f;">Thanks for showing your interest</h6>
-      <img
-        src="https://i.postimg.cc/fWq0gZc3/image.png"
-        style="width: 50px; margin-top: 0.3rem"
-      />
-    </div>`;
+      // ? VC
+      cst_name = document.getElementById("customer-name-vc").value;
+      cst_phone = document.getElementById("customer-phone-vc").value;
+
+      let titleVc =
+        "Videocall%20with%20" +
+        firstName +
+        "%20" +
+        cst_phone +
+        "%20" +
+        cst_name;
+      payLinkVc = `upi://pay?pa=paytmqr2810050501011ukp597vo5du@paytm&tn=${titleVc}&pn=TapHere&cu=INR&am=${vc_price}`;
+      console.log(payLinkVc);
+      document.getElementById("pay-vc").href = payLinkVc;
+      // Generating QR COde
+      var qrcode = new QRCode("qr-vc", payLinkVc);
+      document.querySelector(".payment-box-vc").style.display = "block";
+      document.querySelector("#wrapvc").style.display = "none";
     });
 });
-
-let formCf = document.querySelector(".form-box-coffee");
-formCf.addEventListener("submit", (e) => {
-  e.preventDefault();
-  let data = new FormData(formCf);
-  fetch(
-    "https://script.google.com/macros/s/AKfycbwUiVDScCEvwMzOea1l89-qZ5L1WAlryvFGiaymV95njRLo-kN_zP8ihr1opIFSuEgLMQ/exec",
-    {
-      method: "POST",
-      body: data,
-    }
-  )
-    .then((res) => res.text())
-    .then((data) => {
-      document.getElementById(
-        "wrapcf"
-      ).innerHTML = `<div class="completed" style="text-align: center">
-      <div class="submit-image">
-        <img src="https://i.postimg.cc/NMFt2820/image.png" />
-      </div>
-      <h3 style="font-size: 1.6rem">Please Be Patient</h3>
-      <h5 style="margin: 0.8rem 0; font-size: 1.1rem; color: #4d4d4f;">
-        <span>${creatorName}</span>'s Manager will reach out to you on <span style="color:#25D366;">WhatsApp</span> as soon
-        as ${firstName} can get in touch with you
-      </h5>
-      <h5 style="margin: 0.8rem 0; font-size: 1.01rem; color: #4d4d4f;">Payments will be collected there</h5>
-      <h6 style="color: #4d4d4f;"Thanks for showing your interest</h6>
-      <img
-        src="https://i.postimg.cc/fWq0gZc3/image.png"
-        style="width: 50px; margin-top: 0.3rem"
-      />
-    </div>`;
-    });
-});
-
-// let formEx = document.querySelector(".form-box-exclusive");
-// formEx.addEventListener("submit", (e) => {
-//   e.preventDefault();
-//   let data = new FormData(formEx);
-//   fetch(
-//     "https://script.google.com/macros/s/AKfycbwUiVDScCEvwMzOea1l89-qZ5L1WAlryvFGiaymV95njRLo-kN_zP8ihr1opIFSuEgLMQ/exec",
-//     {
-//       method: "POST",
-//       body: data,
-//     }
-//   )
-//     .then((res) => res.text())
-//     .then((data) => {
-//       document.getElementById(
-//         "wrapex"
-//       ).innerHTML = `<div class="completed" style="text-align: center">
-//       <div class="submit-image">
-//         <img src="https://i.postimg.cc/NMFt2820/image.png" />
-//       </div>
-//       <h3 style="font-size: 1.6rem">Please Be Patient</h3>
-//       <h5 style="margin: 0.8rem 0; font-size: 1.1rem; color: #4d4d4f;">
-//         <span>${creatorName}</span>'s Manager will reach out to you on <span style="color:#25D366;">WhatsApp</span> as soon
-//         as ${firstName} can get in touch with you
-//       </h5>
-//       <h5 style="margin: 0.8rem 0; font-size: 1.01rem; color: #4d4d4f;">Payments will be collected there</h5>
-//       <h6 style="color: #4d4d4f;">Thanks for showing your interest</h6>
-//       <img
-//         src="https://i.postimg.cc/fWq0gZc3/image.png"
-//         style="width: 50px; margin-top: 0.3rem"
-//       />
-//     </div>`;
-//     });
-// });
 
 let formDm = document.querySelector(".form-box-dm");
 formDm.addEventListener("submit", (e) => {
@@ -214,24 +146,23 @@ formDm.addEventListener("submit", (e) => {
   )
     .then((res) => res.text())
     .then((data) => {
-      document.getElementById(
-        "wrapdm"
-      ).innerHTML = `<div class="completed" style="text-align: center">
-      <div class="submit-image">
-        <img src="https://i.postimg.cc/NMFt2820/image.png" />
-      </div>
-      <h3 style="font-size: 1.6rem">Please Be Patient</h3>
-      <h5 style="margin: 0.8rem 0; font-size: 1.1rem; color: #4d4d4f;">
-        <span>${creatorName}</span>'s Manager will reach out to you on <span style="color:#25D366;">WhatsApp</span> as soon
-        as ${firstName} can get in touch with you
-      </h5>
-      <h5 style="margin: 0.8rem 0; font-size: 1.01rem; color: #4d4d4f;">Payments will be collected there</h5>
-      <h6 style="color: #4d4d4f;">Thanks for showing your interest</h6>
-      <img
-        src="https://i.postimg.cc/fWq0gZc3/image.png"
-        style="width: 50px; margin-top: 0.3rem"
-      />
-    </div>`;
+      // ? VC
+      cst_name = document.getElementById("customer-name-dm").value;
+      cst_phone = document.getElementById("customer-phone-dm").value;
+
+      let titleVc =
+        "Videocall%20with%20" +
+        firstName +
+        "%20" +
+        cst_phone +
+        "%20" +
+        cst_name;
+      payLinkVc = `upi://pay?pa=paytmqr2810050501011ukp597vo5du@paytm&tn=${titleVc}&pn=TapHere&cu=INR&am=${dm_price}`;
+      document.getElementById("pay-dm").href = payLinkVc;
+      // Generating QR COde
+      var qrcode = new QRCode("qr-dm", payLinkVc);
+      document.querySelector(".payment-box-dm").style.display = "block";
+      document.querySelector("#wrapdm").style.display = "none";
     });
 });
 
@@ -248,28 +179,28 @@ formPh.addEventListener("submit", (e) => {
   )
     .then((res) => res.text())
     .then((data) => {
-      document.getElementById(
-        "wrapph"
-      ).innerHTML = `<div class="completed" style="text-align: center">
-      <div class="submit-image">
-        <img src="https://i.postimg.cc/NMFt2820/image.png" />
-      </div>
-      <h3 style="font-size: 1.6rem">Please Be Patient</h3>
-      <h5 style="margin: 0.8rem 0; font-size: 1.1rem; color: #4d4d4f;">
-        <span>${creatorName}</span>'s Manager will reach out to you on <span style="color:#25D366;">WhatsApp</span> as soon
-        as ${firstName} can get in touch with you
-      </h5>
-      <h5 style="margin: 0.8rem 0; font-size: 1.01rem; color: #4d4d4f;">Payments will be collected there</h5>
-      <h6 style="color: #4d4d4f;">Thanks for showing your interest</h6>
-      <img
-        src="https://i.postimg.cc/fWq0gZc3/image.png"
-        style="width: 50px; margin-top: 0.3rem"
-      />
-    </div>`;
+      // ? VC
+      cst_name = document.getElementById("customer-name-ph").value;
+      cst_phone = document.getElementById("customer-phone-ph").value;
+
+      let titleVc =
+        "Videocall%20with%20" +
+        firstName +
+        "%20" +
+        cst_phone +
+        "%20" +
+        cst_name;
+      payLinkVc = `upi://pay?pa=paytmqr2810050501011ukp597vo5du@paytm&tn=${titleVc}&pn=TapHere&cu=INR&am=${voc_price}`;
+      document.getElementById("pay-voc").href = payLinkVc;
+      // Generating QR COde
+      var qrcode = new QRCode("qr-voc", payLinkVc);
+      document.querySelector(".payment-box-voc").style.display = "block";
+      document.querySelector("#wrapph").style.display = "none";
     });
 });
 
 // Flickity
+//!Affiliate Products
 var elem = document.querySelector(".main-carousel");
 var flkty = new Flickity(elem, {
   // options
