@@ -2,15 +2,20 @@
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4SNN9YKKL7"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-4SNN9YKKL7"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-4SNN9YKKL7');
+      gtag("config", "G-4SNN9YKKL7");
     </script>
-    
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,7 +31,7 @@
       rel="icon"
       type="image/x-icon"
       href="https://i.postimg.cc/kXLtDLwj/tapherelogo.png"
-    />   
+    />
   </head>
   <body>
     <!--! Pay-Popups   -->
@@ -52,7 +57,7 @@
           <span class="cost-price">₹799</span>
           <span class="per-off">Save 40%</span>
         </div>
-        <h3 class="vc-price pricevc">₹499</h3>
+        <h3 class="vc-price pricevc">₹<span class="vc-money">499</span></h3>
         <span class="fomo">Hurry! Only 3 spots left for today</span>
         <form action="" class="form-box-vc">
           <input
@@ -60,12 +65,14 @@
             name="clientname"
             placeholder="Your Name"
             class="form-text"
+            id="customer-name-vc"
           />
           <input
             type="number"
             name="phonenumber"
             placeholder="Phone Number"
             class="form-text"
+            id="customer-phone-vc"
             required
           />
           <input
@@ -90,129 +97,49 @@
           <input type="text" name="price" id="pricevc" style="display: none" />
         </form>
       </div>
-    </div>
-    <div class="coffee-book" id="coffee-book-card">
-      <div class="card-head">
-        <a class="close-arrow close-arrow-coffee"
-          ><ion-icon name="chevron-down-outline"></ion-icon>
-        </a>
-        <h3>Go on a Coffee Date with Me</h3>
-      </div>
-      <div class="creator-img" style="margin-top: 1rem">
-        <img src="https://i.postimg.cc/8k0C0ST8/founder2.jpg" />
-      </div>
-      <h3 style="margin-top: 1rem">
-        Coffee Date with <span>Mayank Khatri</span>
-      </h3>
-      <div id="wrapcf">
-        <p style="font-size: 0.75rem">
-          Go on a coffee date with <span>Mayank</span> & make long term
-          connections over a coffee date
-        </p>
-        <div class="offer">
-          <span class="cost-price">₹7,999</span>
-          <span class="per-off">Save 40%</span>
+      <!--  -->
+      <!--? Payment Box -->
+      <div class="payment-box-vc">
+        <div class="upi-btn">
+          <h3>Pay via UPI</h3>
+          <div class="pay-btn">
+            <a id="pay-vc" href="#" class="link-btn">
+              Click Here to Pay ₹499
+            </a>
+          </div>
         </div>
-        <h3 class="vc-price pricecf">₹4,999</h3>
-        <form class="form-box-coffee">
-          <input
-            type="text"
-            name="clientname"
-            placeholder="Your Name"
-            class="form-text"
-          />
-          <input
-            type="number"
-            name="phonenumber"
-            placeholder="Phone Number"
-            class="form-text"
-            required
-          />
-          <input
-            type="submit"
-            class="submit-btn"
-            value="Get a Video Call"
-            required
-          />
-          <!--? Cache   -->
-          <input
-            type="text"
-            name="creatorname"
-            id="creatornamecf"
-            style="display: none"
-          />
-          <input
-            type="text"
-            name="ordername"
-            id="ordernamecf"
-            style="display: none"
-          />
-          <input type="text" name="price" id="pricecf" style="display: none" />
-        </form>
-      </div>
-    </div>
-    <div class="exclusive-book" id="exclusive-book-card">
-      <div class="card-head">
-        <a class="close-arrow close-arrow-exclusive"
-          ><ion-icon name="chevron-down-outline"></ion-icon>
-        </a>
-        <h3>Subscribe to my exclusive content</h3>
-      </div>
-      <div class="creator-img" style="margin-top: 1rem">
-        <img src="https://i.postimg.cc/8k0C0ST8/founder2.jpg" />
-      </div>
-      <h3 style="margin-top: 1rem">
-        Montly Subscription of my exclusive Content
-      </h3>
-      <div id="wrapex">
-        <p style="font-size: 0.75rem">
-          Get exclusive photos & Video from <span>Mayank</span> daily from his
-          personal WhatsApp Number
-        </p>
-        <div class="offer">
-          <span class="cost-price">₹1,399</span>
-          <span class="per-off">Save 40%</span>
+        <div class="below-vc">
+          <p>If above link doesn't work</p>
+          <a href="https://paytm.me/9rqy-ef" class="choose"
+            >Pay ₹<span class="total-money-t">499</span> with UPI</a
+          >
         </div>
-        <h3 class="vc-price priceexc">₹999</h3>
-        <form class="form-box-exclusive">
-          <input
-            type="text"
-            name="clientname"
-            placeholder="Your Name"
-            class="form-text"
-          />
-          <input
-            type="number"
-            name="phonenumber"
-            placeholder="Phone Number"
-            class="form-text"
-            required
-          />
-          <input
-            type="submit"
-            class="submit-btn"
-            value="Get a Video Call"
-            required
-          />
-          <!--? Cache   -->
-          <input
-            type="text"
-            name="creatorname"
-            id="creatornameex"
-            style="display: none"
-          />
-          <input
-            type="text"
-            name="ordername"
-            id="ordernameex"
-            style="display: none"
-          />
-          <input type="text" name="price" id="priceex" style="display: none" />
-        </form>
+        <div class="scan">
+          <h4 style="margin-top: 0rem" class="middle-head">
+            Screenshot | Scan QR
+          </h4>
+          <div class="qr-wrap"><div id="qr-vc"></div></div>
+        </div>
+        <div class="upi-bar">
+          <div class="upi-logos">
+            <div class="upi-logo">
+              <img src="https://i.postimg.cc/9ff5Hy4S/Untitled-design-6.png" />
+            </div>
+            <div class="upi-logo">
+              <img
+                src="https://i.pinimg.com/originals/f6/60/a6/f660a637c5ea8ef2b00218bac3479c82.png"
+              />
+            </div>
+            <div class="upi-logo">
+              <img src="https://i.postimg.cc/SsD7cpTJ/image.png" />
+            </div>
+            <div class="upi-logo">
+              <img src="https://i.postimg.cc/xdcqCVr0/Untitled-design-5.png" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    
-     <!--? DM   -->
     <div class="dm-book" id="dm-book-card">
       <div class="card-head">
         <a class="close-arrow close-arrow-dm"
@@ -235,19 +162,21 @@
           <span class="cost-price">₹399</span>
           <span class="per-off">Save 75%</span>
         </div>
-        <h3 class="vc-price pricedm">₹99</h3>
+        <h3 class="vc-price pricedm">₹<span class="dm-money">99</span></h3>
         <form class="form-box-dm">
           <input
             type="text"
             name="clientname"
             placeholder="Your Name"
             class="form-text"
+            id="customer-name-dm"
           />
           <input
             type="number"
             name="phonenumber"
             placeholder="Phone Number"
             class="form-text"
+            id="customer-phone-dm"
             required
           />
           <input
@@ -272,8 +201,46 @@
           <input type="text" name="price" id="pricedm" style="display: none" />
         </form>
       </div>
+      <!--? Payment Box -->
+      <div class="payment-box-dm">
+        <div class="upi-btn">
+          <h3>Pay via UPI</h3>
+          <div class="pay-btn">
+            <a id="pay-dm" href="#" class="link-btn"> Click Here to Pay ₹99 </a>
+          </div>
+        </div>
+        <div class="below-dm">
+          <p>If above link doesn't work</p>
+          <a href="https://paytm.me/9rqy-ef" class="choose"
+            >Pay ₹<span class="total-money-t">99</span> with UPI</a
+          >
+        </div>
+        <div class="scan">
+          <h4 style="margin-top: 0rem" class="middle-head">
+            Screenshot | Scan QR
+          </h4>
+          <div class="qr-wrap"><div id="qr-dm"></div></div>
+        </div>
+        <div class="upi-bar">
+          <div class="upi-logos">
+            <div class="upi-logo">
+              <img src="https://i.postimg.cc/9ff5Hy4S/Untitled-design-6.png" />
+            </div>
+            <div class="upi-logo">
+              <img
+                src="https://i.pinimg.com/originals/f6/60/a6/f660a637c5ea8ef2b00218bac3479c82.png"
+              />
+            </div>
+            <div class="upi-logo">
+              <img src="https://i.postimg.cc/SsD7cpTJ/image.png" />
+            </div>
+            <div class="upi-logo">
+              <img src="https://i.postimg.cc/xdcqCVr0/Untitled-design-5.png" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
     <div class="phone-book" id="phone-book-card">
       <div class="card-head">
         <a class="close-arrow close-arrow-phone"
@@ -296,7 +263,7 @@
           <span class="cost-price">₹499</span>
           <span class="per-off">Save 40%</span>
         </div>
-        <h3 class="vc-price pricephn">₹199</h3>
+        <h3 class="vc-price pricephn">₹<span class="voc-money">199</span></h3>
         <span class="fomo">Hurry! Only 2 spots left for today</span>
         <form class="form-box-phone">
           <input
@@ -304,12 +271,14 @@
             name="clientname"
             placeholder="Your Name"
             class="form-text"
+            id="customer-name-ph"
           />
           <input
             type="number"
             name="phonenumber"
             placeholder="Phone Number"
             class="form-text"
+            id="customer-phone-ph"
             required
           />
           <input
@@ -334,11 +303,51 @@
           <input type="text" name="price" id="priceph" style="display: none" />
         </form>
       </div>
+      <!--? Payment Box -->
+      <div class="payment-box-voc">
+        <div class="upi-btn">
+          <h3>Pay via UPI</h3>
+          <div class="pay-btn">
+            <a id="pay-voc" href="#" class="link-btn">
+              Click Here to Pay ₹199
+            </a>
+          </div>
+        </div>
+        <div class="below-voc">
+          <p>If above link doesn't work</p>
+          <a href="https://paytm.me/9rqy-ef" class="choose"
+            >Pay ₹<span class="total-money-t">199</span> with UPI</a
+          >
+        </div>
+        <div class="scan">
+          <h4 style="margin-top: 0rem" class="middle-head">
+            Screenshot | Scan QR
+          </h4>
+          <div class="qr-wrap"><div id="qr-voc"></div></div>
+        </div>
+        <div class="upi-bar">
+          <div class="upi-logos">
+            <div class="upi-logo">
+              <img src="https://i.postimg.cc/9ff5Hy4S/Untitled-design-6.png" />
+            </div>
+            <div class="upi-logo">
+              <img
+                src="https://i.pinimg.com/originals/f6/60/a6/f660a637c5ea8ef2b00218bac3479c82.png"
+              />
+            </div>
+            <div class="upi-logo">
+              <img src="https://i.postimg.cc/SsD7cpTJ/image.png" />
+            </div>
+            <div class="upi-logo">
+              <img src="https://i.postimg.cc/xdcqCVr0/Untitled-design-5.png" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!--! Action-Pop-Up's  -->
     <!--? Video Call with Me  -->
-
     <div class="video-call">
       <a class="vc-up">
         <ion-icon name="chevron-up-outline" class="arrow-up bounce"></ion-icon>
@@ -353,17 +362,14 @@
         >
       </a>
     </div>
-    <!--? Coffee Date with Me  -->
+    <!--?  Call Me  -->
     <div class="coffee">
-      <a class="message-bubble">
-        Meet Me on Coffee <span class="dark">?</span>
+      <a class="message-bubble"
+        >Get a Call From Me <span class="dark">?</span>
       </a>
       <div class="coffee-date shake">
         <a>
-          <img
-            class="coffee-img"
-            src="https://i.postimg.cc/DycQDTLJ/image.png"
-          />
+          <img class="coffee-img" src="https://i.postimg.cc/JhWdnY19/1.png" />
         </a>
       </div>
     </div>
@@ -404,13 +410,13 @@
             style="color: dodgerblue"
             name="mail"
           ></ion-icon
-          >mayank@xtasy.in
+          >mayank@tap-here.in
         </p>
         <a class="info-link" href="#about-me">About Me</a>
       </div>
     </section>
     <!--! Talk to Me Section  -->
-   <section class="talk-to-me">
+    <section class="talk-to-me">
       <h3 class="head">Talk to Me</h3>
       <div class="talk-icons">
         <a class="chat-talk-icon talk-icon">
@@ -425,10 +431,6 @@
           <img src="https://i.postimg.cc/8z0315qq/Untitled-design-3.png" />
           <p style="white-space: nowrap">Video Call</p>
         </a>
-        <a class="meet-talk-icon talk-icon">
-          <img src="https://i.postimg.cc/Y0GLB47d/Untitled-design-2.png" />
-          <p>Meet Me</p>
-        </a>
       </div>
     </section>
     <!--! My Links Section  -->
@@ -437,10 +439,10 @@
       <!--? Social Icons  -->
       <div class="social">
         <div class="social-icon tilt">
-          <!--*LinkedIn  -->
+          <!--*Instagram -->
           <a href="#">
             <img
-              src="https://pbs.twimg.com/profile_images/1508518003184349187/1KQYoqPY_400x400.png"
+              src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/instagram-512.png"
               alt=""
           /></a>
         </div>
@@ -474,11 +476,11 @@
         <a href="https://xtasy.in">
           <img
             class="personal-link-image"
-            src="https://i.postimg.cc/FRq2pGPX/site-icon.png"
+            src="https://s.tmimgcdn.com/scr/1200x750/233500/luxury-letter-m-logo-design-template_233501-original.png"
             alt=""
           />
           <a class="personal-href" href="https://xtasy.in"
-            >Link to My Skincare Brand</a
+            >Link to My Personal Blog</a
           >
         </a>
       </div>
@@ -564,20 +566,6 @@
         <!-- * <div class="carousel-cell mything"><a href=""></a></div>  -->
       </div>
     </section>
-    <!--! Exclusive Conetent  -->
-    <section class="exclusive-content">
-      <h3 class="head">Exclusive Content</h3>
-      <div class="exclusive-wrap">
-        <div class="exclusive-image">
-          <a>
-            <img
-              src="https://i.postimg.cc/SRdBJddf/exclusive-content-thumb-2.png"
-              alt=""
-            />
-          </a>
-        </div>
-      </div>
-    </section>
     <!--! About Me  -->
     <section id="about-me">
       <h3 class="head">About Me</h3>
@@ -588,16 +576,16 @@
         <p>
           Hi, I'm Mayank from Delhi, I started my instagram account a year ago
           because a bitch was flaunting her 500 likes on an instagram post,
-          tryna annoy me by telling me I just had 50 on mine. Congratulations! 
+          tryna annoy me by telling me I just had 50 on mine.
         </p>
         <div class="hire">
           <a class="hire-link" href="#">Hire me for a project</a>
           <div class="social">
             <div class="social-icon-hire">
-              <!--*LinkedIn  -->
+              <!--*Instagram -->
               <a href="#">
                 <img
-                  src="https://pbs.twimg.com/profile_images/1508518003184349187/1KQYoqPY_400x400.png"
+                  src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/instagram-512.png"
                   alt=""
               /></a>
             </div>
@@ -646,8 +634,9 @@
     ></script>
     <!--? Flickity -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
+    <!--? QR JQUERY  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <!--! Custom Scripts -->
-    <script src="logic.js"></script>
+    <script src="temp.js"></script>
   </body>
 </html>
