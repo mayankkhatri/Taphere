@@ -16,7 +16,7 @@ function bottomsUpVc() {
   vcBookCard.style.bottom = "0";
   ordername = "video call";
   document.getElementById("ordernamevc").value = ordername;
-  pricecost = document.querySelector(".pricevc").innerHTML;
+  pricecost = document.querySelector(".vc-money").innerHTML;
   document.getElementById("pricevc").value = pricecost;
   let creatorName = document.querySelector(".creator-name").innerHTML;
   document.getElementById("creatornamevc").value = creatorName;
@@ -32,7 +32,7 @@ function bottomsUpDm() {
   dmBookCard.style.bottom = "0";
   ordername = "Chat";
   document.getElementById("ordernamedm").value = ordername;
-  pricecost = document.querySelector(".pricedm").innerHTML;
+  pricecost = document.querySelector(".dm-money").innerHTML;
   document.getElementById("pricedm").value = pricecost;
   let creatorName = document.querySelector(".creator-name").innerHTML;
   document.getElementById("creatornamedm").value = creatorName;
@@ -47,7 +47,7 @@ function bottomsUpPhone() {
   phoneBookCard.style.bottom = "0";
   ordername = "Voice Call";
   document.getElementById("ordernameph").value = ordername;
-  pricecost = document.querySelector(".pricephn").innerHTML;
+  pricecost = document.querySelector(".voc-money").innerHTML;
   document.getElementById("priceph").value = pricecost;
   let creatorName = document.querySelector(".creator-name").innerHTML;
   document.getElementById("creatornameph").value = creatorName;
