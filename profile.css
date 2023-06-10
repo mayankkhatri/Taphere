@@ -356,7 +356,7 @@ footer {
 .phone-book {
   position: fixed;
   bottom: -300%;
-  transition: bottom 0.7s ease-out;
+  transition: bottom 0.9s ease-out;
 }
 
 .close-arrow {
