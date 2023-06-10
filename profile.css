@@ -355,7 +355,7 @@ footer {
 .dm-book,
 .phone-book {
   position: fixed;
-  bottom: -100%;
+  bottom: -300%;
   transition: bottom 0.7s ease-out;
 }
 
