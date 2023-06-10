@@ -338,7 +338,6 @@ footer {
 .coffee-book,
 .dm-book,
 .phone-book {
-  max-height: 100vh;
   width: 100%;
   display: block;
   background: rgb(255, 247, 173);
@@ -523,12 +522,12 @@ footer {
 #qr-vc,
 #qr-dm,
 #qr-voc {
-  margin: 2rem 0 0 1rem;
+  margin-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 200px;
-  height: 200px;
+  width: 190px;
+  height: 190px;
 }
 
 .upi-bar {
@@ -540,6 +539,7 @@ footer {
 #qr-dm img,
 #qr-voc img {
   border-radius: 0;
+  object-fit: contain;
 }
 
 .qr-wrap {
