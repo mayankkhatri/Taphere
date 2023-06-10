@@ -64,9 +64,9 @@ document
   .addEventListener("click", bottomsDown);
 
 function bottomsDown() {
-  vcBookCard.style.bottom = "-100%";
-  dmBookCard.style.bottom = "-100%";
-  phoneBookCard.style.bottom = "-100%";
+  vcBookCard.style.bottom = "-300%";
+  dmBookCard.style.bottom = "-300%";
+  phoneBookCard.style.bottom = "-300%";
 }
 //! If above link don't work
 var dm_price = document.querySelector(".dm-money").innerHTML;
