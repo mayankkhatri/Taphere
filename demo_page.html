@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-4SNN9YKKL7"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-4SNN9YKKL7");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo page</title>
+    <!--? Styles  -->
+    <link rel="stylesheet" href="profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <!--? Site Icon  -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://i.postimg.cc/kXLtDLwj/tapherelogo.png"
+    />
+  </head>
+  <body>
+    <!--! Pay-Popups   -->
+    <div class="vc-book" id="vc-book-card">
+      <div class="card-head">
+        <a class="close-arrow"
+          ><ion-icon name="chevron-down-outline"></ion-icon>
+        </a>
+        <h3>Talk to me on a video call</h3>
+      </div>
+      <div class="creator-img" style="margin-top: 1rem">
+        <img src="https://i.postimg.cc/tgK29D6H/Untitled-design-7.png" />
+      </div>
+      <h3 style="margin-top: 1rem">Video Call with <span>Your Name</span></h3>
+      <div id="wrapvc">
+        <p style="font-size: 0.75rem">
+          Talk to <span>Name</span> about whatever you want as much as you want
+        </p>
+        <div class="offer">
+          <span class="cost-price">₹799</span>
+          <span class="per-off">Save 40%</span>
+        </div>
+        <h3 class="vc-price pricevc">₹<span class="vc-money">499</span></h3>
+        <span class="fomo">Hurry! Only 3 spots left for today</span>
+        <form action="" class="form-box-vc">
+          <input
+            type="text"
+            name="clientname"
+            placeholder="Your Name"
+            class="form-text"
+            id="customer-name-vc"
+          />
+          <input
+            type="number"
+            name="phonenumber"
+            placeholder="Phone Number"
+            class="form-text"
+            id="customer-phone-vc"
+            required
+          />
+          <input
+            type="submit"
+            class="submit-btn"
+            value="Get a Video Call"
+            required
+          />
+          <!--? Cache   -->
+          <input
+            type="text"
+            name="creatorname"
+            id="creatornamevc"
+            style="display: none"
+          />
+          <input
+            type="text"
+            name="ordername"
+            id="ordernamevc"
+            style="display: none"
+          />
+          <input type="text" name="price" id="pricevc" style="display: none" />
+        </form>
+      </div>
+      <!--  -->
+      <!--? Payment Box -->
+      <div class="payment-box-vc">
+        <div class="upi-btn">
+          <h3>Pay via UPI</h3>
+          <div class="pay-btn">
+            <a id="pay-vc" href="#" class="link-btn">
+              Click Here to Pay ₹499
+            </a>
+          </div>
+        </div>
+        <div class="below-vc">
+          <p>If above link doesn't work</p>
+          <a href="https://paytm.me/9rqy-ef" class="choose"
+            >Pay ₹<span class="total-money-t">499</span> with UPI</a
+          >
+        </div>
+        <div class="scan">
+          <h4 style="margin-top: 0rem" class="middle-head">
+            Screenshot | Scan QR
+          </h4>
+          <div class="qr-wrap"><div id="qr-vc"></div></div>
+        </div>
+        <div class="upi-bar">
+          <div class="upi-logos">
+            <div class="upi-logo">
+              <img src="https://i.postimg.cc/9ff5Hy4S/Untitled-design-6.png" />
+            </div>
+            <div class="upi-logo">
+              <img
+                src="https://i.pinimg.com/originals/f6/60/a6/f660a637c5ea8ef2b00218bac3479c82.png"
+              />
+            </div>
+            <div class="upi-logo">
+              <img src="https://i.postimg.cc/SsD7cpTJ/image.png" />
+            </div>
+            <div class="upi-logo">
+              <img src="https://i.postimg.cc/xdcqCVr0/Untitled-design-5.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dm-book" id="dm-book-card">
+      <div class="card-head">
+        <a class="close-arrow close-arrow-dm"
+          ><ion-icon name="chevron-down-outline"></ion-icon>
+        </a>
+        <h3>Get a DM from <span>Name</span> on Instagram</h3>
+      </div>
+      <div class="creator-img" style="margin-top: 1rem">
+        <img src="https://i.postimg.cc/tgK29D6H/Untitled-design-7.png" />
+      </div>
+      <h3 style="margin-top: 1rem">Chat with <span>Name</span> on Instagram</h3>
+      <div id="wrapdm">
+        <p style="font-size: 0.75rem">
+          Get your DM request accepted from <span>Name</span> on instagram and
+          befriend each other
+        </p>
+        <div class="offer">
+          <span class="cost-price">₹399</span>
+          <span class="per-off">Save 75%</span>
+        </div>
+        <h3 class="vc-price pricedm">₹<span class="dm-money">99</span></h3>
+        <form class="form-box-dm">
+          <input
+            type="text"
+            name="clientname"
+            placeholder="Your Name"
+            class="form-text"
+            id="customer-name-dm"
+          />
+          <input
+            type="number"
+            name="phonenumber"
+            placeholder="Phone Number"
+            class="form-text"
+            id="customer-phone-dm"
+            required
+          />
+          <input
+            type="submit"
+            class="submit-btn"
+            value="Get a Message"
+            required
+          />
+          <!--? Cache   -->
+          <input
+            type="text"
+            name="creatorname"
+            id="creatornamedm"
+            style="display: none"
+          />
+          <input
+            type="text"
+            name="ordername"
+            id="ordernamedm"
+            style="display: none"
+          />
+          <input type="text" name="price" id="pricedm" style="display: none" />
+        </form>
+      </div>
+      <!--? Payment Box -->
+      <div class="payment-box-dm">
+        <div class="upi-btn">
+          <h3>Pay via UPI</h3>
+          <div class="pay-btn">
+            <a id="pay-dm" href="#" class="link-btn"> Click Here to Pay ₹99 </a>
+          </div>
+        </div>
+        <div class="below-dm">
+          <p>If above link doesn't work</p>
+          <a href="https://paytm.me/9rqy-ef" class="choose"
+            >Pay ₹<span class="total-money-t">99</span> with UPI</a
+          >
+        </div>
+        <div class="scan">
+          <h4 style="margin-top: 0rem" class="middle-head">
+            Screenshot | Scan QR
+          </h4>
+          <div class="qr-wrap"><div id="qr-dm"></div></div>
+        </div>
+        <div class="upi-bar">
+          <div class="upi-logos">
+            <div class="upi-logo">
+              <img src="https://i.postimg.cc/9ff5Hy4S/Untitled-design-6.png" />
+            </div>
+            <div class="upi-logo">
+              <img
+                src="https://i.pinimg.com/originals/f6/60/a6/f660a637c5ea8ef2b00218bac3479c82.png"
+              />
+            </div>
+            <div class="upi-logo">
+              <img src="https://i.postimg.cc/SsD7cpTJ/image.png" />
+            </div>
+            <div class="upi-logo">
+              <img src="https://i.postimg.cc/xdcqCVr0/Untitled-design-5.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="phone-book" id="phone-book-card">
+      <div class="card-head">
+        <a class="close-arrow close-arrow-phone"
+          ><ion-icon name="chevron-down-outline"></ion-icon>
+        </a>
+        <h3>Talk to me on a Voice Call</h3>
+      </div>
+      <div class="creator-img" style="margin-top: 1rem">
+        <img src="https://i.postimg.cc/tgK29D6H/Untitled-design-7.png" />
+      </div>
+      <h3 style="margin-top: 1rem">Voice Call with <span>Name</span></h3>
+      <div id="wrapph">
+        <p style="font-size: 0.75rem">
+          Talk to <span>Name</span> about whatever you want as much as you want
+        </p>
+        <div class="offer">
+          <span class="cost-price">₹499</span>
+          <span class="per-off">Save 40%</span>
+        </div>
+        <h3 class="vc-price pricephn">₹<span class="voc-money">199</span></h3>
+        <span class="fomo">Hurry! Only 2 spots left for today</span>
+        <form class="form-box-phone">
+          <input
+            type="text"
+            name="clientname"
+            placeholder="Your Name"
+            class="form-text"
+            id="customer-name-ph"
+          />
+          <input
+            type="number"
+            name="phonenumber"
+            placeholder="Phone Number"
+            class="form-text"
+            id="customer-phone-ph"
+            required
+          />
+          <input
+            type="submit"
+            class="submit-btn"
+            value="Get a Voice Call"
+            required
+          />
+          <!--? Cache   -->
+          <input
+            type="text"
+            name="creatorname"
+            id="creatornameph"
+            style="display: none"
+          />
+          <input
+            type="text"
+            name="ordername"
+            id="ordernameph"
+            style="display: none"
+          />
+          <input type="text" name="price" id="priceph" style="display: none" />
+        </form>
+      </div>
+      <!--? Payment Box -->
+      <div class="payment-box-voc">
+        <div class="upi-btn">
+          <h3>Pay via UPI</h3>
+          <div class="pay-btn">
+            <a id="pay-voc" href="#" class="link-btn">
+              Click Here to Pay ₹199
+            </a>
+          </div>
+        </div>
+        <div class="below-voc">
+          <p>If above link doesn't work</p>
+          <a href="https://paytm.me/9rqy-ef" class="choose"
+            >Pay ₹<span class="total-money-t">199</span> with UPI</a
+          >
+        </div>
+        <div class="scan">
+          <h4 style="margin-top: 0rem" class="middle-head">
+            Screenshot | Scan QR
+          </h4>
+          <div class="qr-wrap"><div id="qr-voc"></div></div>
+        </div>
+        <div class="upi-bar">
+          <div class="upi-logos">
+            <div class="upi-logo">
+              <img src="https://i.postimg.cc/9ff5Hy4S/Untitled-design-6.png" />
+            </div>
+            <div class="upi-logo">
+              <img
+                src="https://i.pinimg.com/originals/f6/60/a6/f660a637c5ea8ef2b00218bac3479c82.png"
+              />
+            </div>
+            <div class="upi-logo">
+              <img src="https://i.postimg.cc/SsD7cpTJ/image.png" />
+            </div>
+            <div class="upi-logo">
+              <img src="https://i.postimg.cc/xdcqCVr0/Untitled-design-5.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--! Action-Pop-Up's  -->
+    <!--? Video Call with Me  -->
+    <div class="video-call">
+      <a class="vc-up">
+        <ion-icon name="chevron-up-outline" class="arrow-up bounce"></ion-icon>
+      </a>
+      <a>
+        <img
+          src="https://i.postimg.cc/90L99h03/image.png"
+          class="vc-icon wave"
+        />
+        <a class="vc-link"
+          ><h3 class="color-change">Talk to Me on a Personal Video Call</h3></a
+        >
+      </a>
+    </div>
+    <!--?  Call Me  -->
+    <div class="coffee">
+      <a class="message-bubble"
+        >Get a Call From Me <span class="dark">?</span>
+      </a>
+      <div class="coffee-date shake">
+        <a>
+          <img class="coffee-img" src="https://i.postimg.cc/JhWdnY19/1.png" />
+        </a>
+      </div>
+    </div>
+
+    <!--! Header with Creator Name -->
+    <div class="header">
+      <h3>
+        <a href="index.html" class="blue-tap">Tap-Here</a> X
+        <span class="creator-name">username</span>
+      </h3>
+    </div>
+    <!--! Section With CreatorName CreatorCity CreatorEmail CreatorDP -->
+    <section class="creator-info">
+      <div class="dp">
+        <img src="https://i.postimg.cc/tgK29D6H/Untitled-design-7.png" />
+      </div>
+      <div class="info">
+        <h1 class="info-name">Your Name</h1>
+        <p class="info-city" style="font-weight: 700">
+          <ion-icon
+            class="info-icons"
+            style="color: red"
+            name="location-sharp"
+          ></ion-icon
+          >City 🇮🇳
+        </p>
+        <p class="info-username">
+          <ion-icon
+            class="info-icons"
+            style="transform: translateY(0.3rem); color: #e95950"
+            name="logo-instagram"
+          ></ion-icon
+          >@your_username
+        </p>
+        <p class="info-email">
+          <ion-icon
+            class="info-icons"
+            style="color: dodgerblue"
+            name="mail"
+          ></ion-icon
+          >yourcontact@email.com
+        </p>
+        <a class="info-link" href="#about-me">About Me</a>
+      </div>
+    </section>
+    <!--! Talk to Me Section  -->
+    <section class="talk-to-me">
+      <h3 class="head">Talk to Me</h3>
+      <div class="talk-icons">
+        <a class="chat-talk-icon talk-icon">
+          <img src="https://i.postimg.cc/k4yKvVF5/message-icon-6.png" />
+          <p>Chat</p>
+        </a>
+        <a class="phone-talk-icon talk-icon">
+          <img src="https://i.postimg.cc/J4WscjXm/image.png" />
+          <p>Voice Call</p>
+        </a>
+        <a class="video-talk-icon talk-icon">
+          <img src="https://i.postimg.cc/8z0315qq/Untitled-design-3.png" />
+          <p style="white-space: nowrap">Video Call</p>
+        </a>
+      </div>
+    </section>
+    <!--! My Links Section  -->
+    <section class="mylinks">
+      <h3 class="head">My Links</h3>
+      <!--? Social Icons  -->
+      <div class="social">
+        <div class="social-icon tilt">
+          <!--*Instagram -->
+          <a href="#">
+            <img
+              src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/instagram-512.png"
+              alt=""
+          /></a>
+        </div>
+        <div class="social-icon tilt">
+          <!-- * Twitter -->
+          <a href="https://openinapp.co/ond16">
+            <img
+              src="https://play-lh.googleusercontent.com/wIf3HtczQDjHzHuu7vezhqNs0zXAG85F7VmP7nhsTxO3OHegrVXlqIh_DWBYi86FTIGk"
+              alt=""
+          /></a>
+        </div>
+        <div class="social-icon tilt">
+          <!--* Snapchat  -->
+          <a href="https://www.snapchat.com/add/geniusly.mayank">
+            <img
+              src="https://play-lh.googleusercontent.com/KxeSAjPTKliCErbivNiXrd6cTwfbqUJcbSRPe_IBVK_YmwckfMRS1VIHz-5cgT09yMo"
+              alt=""
+          /></a>
+        </div>
+        <div class="social-icon tilt">
+          <!--* Youtube  -->
+          <a href="https://linktw.in/suPt9U">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/YouTube_social_red_square_%282017%29.svg/2048px-YouTube_social_red_square_%282017%29.svg.png"
+              alt=""
+          /></a>
+        </div>
+      </div>
+      <!--? Personal Link  -->
+      <div class="personal-link">
+        <a href="https://xtasy.in">
+          <img
+            class="personal-link-image"
+            src="https://s.tmimgcdn.com/scr/1200x750/233500/luxury-letter-m-logo-design-template_233501-original.png"
+            alt=""
+          />
+          <a class="personal-href" href="#">Any Other Link You Have</a>
+        </a>
+      </div>
+    </section>
+    <!--! Latest Stuff Section  -->
+    <section class="latest">
+      <h3 class="head">My Latest Stuff</h3>
+      <div class="embeds">
+        <div class="yt-latest">
+          <iframe
+            class="frame"
+            src="https://www.youtube.com/embed/-jagPsc3UWc"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!--! Mythings Section  -->
+    <section class="mythings">
+      <h3 class="head">Things I Use</h3>
+      <div class="main-carousel product-container">
+        <div class="carousel-cell mything">
+          <a href="#"
+            ><img
+              class="product-image"
+              src="https://i.postimg.cc/hjYs0gsq/1.png"
+            />
+            <p>Sell Merch</p></a
+          >
+        </div>
+        <div class="carousel-cell mything">
+          <a href="https://amzn.to/3Gkolf7"
+            ><img
+              class="product-image"
+              src="https://i.postimg.cc/QtZ1NtfC/2.png"
+            />
+            <p>Sell Goods</p></a
+          >
+        </div>
+        <div class="carousel-cell mything">
+          <a href="https://amzn.to/3MjbDkf"
+            ><img
+              class="product-image"
+              src="https://i.postimg.cc/vTQn9KFd/3.png"
+            />
+            <p>Affilitate Products</p></a
+          >
+        </div>
+        <div class="carousel-cell mything">
+          <a href="https://amzn.to/3zFD3cx"
+            ><img
+              class="product-image"
+              src="https://i.postimg.cc/FRbcY46Z/4.png"
+            />
+            <p>Reel Outfits</p></a
+          >
+        </div>
+        <div class="carousel-cell mything">
+          <a href="https://amzn.to/3ZDARx3">
+            <img
+              class="product-image"
+              src="https://i.postimg.cc/1zqDZ6cb/5.png"
+            />
+            <p>Filming Equipments</p></a
+          >
+        </div>
+        <div class="carousel-cell mything">
+          <a href="https://amzn.to/40KkcJx"
+            ><img
+              class="product-image"
+              src="https://i.postimg.cc/sg1pwbBj/6.png"
+            />
+            <p>Paid Promotions</p></a
+          >
+        </div>
+        <!-- * <div class="carousel-cell mything"><a href=""></a></div>  -->
+      </div>
+    </section>
+    <!--! About Me  -->
+    <section id="about-me">
+      <h3 class="head">About Me</h3>
+      <div class="creator-img">
+        <img src="https://i.postimg.cc/MH3LvT9k/Untitled-design-8.png" />
+      </div>
+      <div class="me-text">
+        <p>
+          Here you can type a very long description about yourself that you
+          can't in your instagram bio. There is no word limit and you can write
+          and customise however you want. It's awesome 😍
+        </p>
+        <div class="hire">
+          <a class="hire-link" href="#">Hire me for a project</a>
+          <div class="social">
+            <div class="social-icon-hire">
+              <!--*Instagram -->
+              <a href="#">
+                <img
+                  src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/instagram-512.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="social-icon-hire">
+              <!-- * Twitter -->
+              <a href="https://openinapp.co/ond16">
+                <img
+                  src="https://play-lh.googleusercontent.com/wIf3HtczQDjHzHuu7vezhqNs0zXAG85F7VmP7nhsTxO3OHegrVXlqIh_DWBYi86FTIGk"
+                  alt=""
+              /></a>
+            </div>
+            <div class="social-icon-hire">
+              <!--* Snapchat  -->
+              <a href="https://www.snapchat.com/add/geniusly.mayank">
+                <img
+                  src="https://play-lh.googleusercontent.com/KxeSAjPTKliCErbivNiXrd6cTwfbqUJcbSRPe_IBVK_YmwckfMRS1VIHz-5cgT09yMo"
+                  alt=""
+              /></a>
+            </div>
+            <div class="social-icon-hire">
+              <!--* Youtube  -->
+              <a href="https://linktw.in/suPt9U">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/YouTube_social_red_square_%282017%29.svg/2048px-YouTube_social_red_square_%282017%29.svg.png"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--! Footer  -->
+    <footer>
+      <h3 style="text-align: center">
+        Get Your <a href="index.html" class="blue-tap">Tap-Here</a> Link Now
+      </h3>
+    </footer>
+    <!--? Ion Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!--? Flickity -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!--? QR JQUERY  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <!--! Custom Scripts -->
+    <script src="logic.js"></script>
+  </body>
+</html>
