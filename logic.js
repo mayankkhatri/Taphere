@@ -1,5 +1,5 @@
 let creatorName = document.querySelector(".creator-name").innerHTML;
-let firstName = creatorName.substring(0, creatorName.indexOf(" "));
+let firstName = creatorName;
 // document.getElementById("creatorname").value = creatorName;
 
 // VC Book Drawer
