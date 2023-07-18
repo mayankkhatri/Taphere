@@ -151,7 +151,7 @@ formDm.addEventListener("submit", (e) => {
       cst_phone = document.getElementById("customer-phone-dm").value;
 
       let titleVc =
-        "Videocall%20with%20" +
+        "Chat%20with%20" +
         firstName +
         "%20" +
         cst_phone +
@@ -184,7 +184,7 @@ formPh.addEventListener("submit", (e) => {
       cst_phone = document.getElementById("customer-phone-ph").value;
 
       let titleVc =
-        "Videocall%20with%20" +
+        "Voicecall%20with%20" +
         firstName +
         "%20" +
         cst_phone +
